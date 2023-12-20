@@ -153,8 +153,10 @@ img {
 
 .advantages {
   padding: 24px;
+  background-position: 50% 50%;
   background-size: cover;
   background-image: url("../img/background/advantages-bg.png");
+  border-radius: 16px;
 }
 
 .advantages__inner {
@@ -183,6 +185,7 @@ img {
   background-color: #fff;
   border-radius: 16px;
   background-position: 50% 50%;
+  background-size: cover;
   background-image: url("../img/background/news-bg.jpg ");
 }
 
@@ -196,6 +199,10 @@ img {
 
 .contacts {
   padding: 64px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url("../img/background/feedback-bg.jpg");
+  border-radius: 16px;
 }
 
 .contacts__inner {
@@ -207,11 +214,19 @@ img {
 }
 
 .page__footer {
+  padding: 48px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.footer-menu_list {
+.social__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-menu__list {
   margin: 0;
   padding: 0;
   display: grid;
