@@ -457,6 +457,8 @@ img {
   gap: 30px;
 }
 
+/* Card  */
+
 .card {
   padding: 0 40px 28px 40px;
   display: grid;
@@ -522,6 +524,8 @@ img {
   cursor: pointer;
 }
 
+/* Advantages */
+
 .advantages {
   padding: 24px;
   background-position: 50% 50%;
@@ -581,6 +585,8 @@ img {
   background-image: url("../img/icon/thermometer.svg");
 }
 
+/* Info */
+
 .info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -609,6 +615,8 @@ img {
   background-color: #fff;
   border-radius: 16px;
 }
+
+/* Delivery */
 
 .delivery {
   padding: 64px 64px 64px 100px;
@@ -665,6 +673,8 @@ img {
   grid-column: 1 / -1;
   justify-self: center;
 }
+
+/* Contact */
 
 .contacts {
   padding: 64px;
@@ -723,11 +733,15 @@ img {
   margin-bottom: 32px;
 }
 
+/* Foote */
+
 .page__footer {
   padding: 48px 0;
   display: flex;
   justify-content: space-between;
 }
+
+/* Social */
 
 .social__list {
   margin: 0;
@@ -812,6 +826,8 @@ img {
   background-position: 50% 50%;
 }
 
+/* Developer */
+
 .developer__text {
   margin: 0;
   font-size: 12px;
@@ -828,4 +844,45 @@ img {
 
 .developer__link {
   color: #2D3440;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  padding-top: 36px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon/chevrons-right.svg");
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs__link--current {
+  border-bottom: 1px solid #2D3440;
+}
+
+/* Catalog */
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
 }
