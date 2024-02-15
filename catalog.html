@@ -192,10 +192,10 @@
         </form>
       </section>
 
-      <section class="page-main__section catalog-list">
+      <section class="card-list">
         <h2 class="visually-hidden">Результаты поиска</h2>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-1.png" width="168" height="168" alt="">
           <h4 class="card__title">Малинка</h4>
           <p class="card__desc">Сливочное мороженое с малиновым джемом</p>
@@ -208,7 +208,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-2.png" width="168" height="168" alt="">
           <h4 class="card__title">Фисташка</h4>
           <p class="card__desc">Фисташковый пломбир с кусочками шоколада</p>
@@ -221,7 +221,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-3.png" width="168" height="168" alt="">
           <h4 class="card__title">Черника</h4>
           <p class="card__desc">Крем-брюле с черничным джемом</p>
@@ -234,7 +234,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-4.png" width="168" height="168" alt="">
           <h4 class="card__title">Бабл-гам</h4>
           <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
@@ -247,7 +247,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-5.png" width="168" height="168" alt="">
           <h4 class="card__title">Ежевика</h4>
           <p class="card__desc">Сливочное мороженое с ежевичным джемом</p>
@@ -260,7 +260,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-6.png" width="168" height="168" alt="">
           <h4 class="card__title">Банан</h4>
           <p class="card__desc">Сливочный пломбир с банановым вкусом</p>
@@ -273,7 +273,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-7.png" width="168" height="168" alt="">
           <h4 class="card__title">Шоколадка</h4>
           <p class="card__desc">Классический шоколадный пломбир</p>
@@ -286,7 +286,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-8.png" width="168" height="168" alt="">
           <h4 class="card__title">Клубничка</h4>
           <p class="card__desc">Сливочный пломбир с клубничным вкусом</p>
@@ -299,7 +299,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-9.png" width="168" height="168" alt="">
           <h4 class="card__title">Лимон</h4>
           <p class="card__desc">Освежающий лимонный сорбет</p>
@@ -312,7 +312,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-10.png" width="168" height="168" alt="">
           <h4 class="card__title">Ментол</h4>
           <p class="card__desc">Сливочный пломбир с ментоловым сиропом</p>
@@ -325,7 +325,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-11.png" width="168" height="168" alt="">
           <h4 class="card__title">Орешек</h4>
           <p class="card__desc">Фисташковый пломбир с шоколадным сиропом</p>
@@ -338,7 +338,7 @@
           </button>
         </article>
 
-        <article class="popular__item card">
+        <article class="card">
           <img class="card__img" src="img/catalog/catalog-12.png" width="168" height="168" alt="">
           <h4 class="card__title">Крем-брюле</h4>
           <p class="card__desc">Классическое крем-брюле</p>
@@ -353,7 +353,49 @@
       </section>
 
       <div class="pagination">
+        <button class="pagination__button button" type="button">
+          Показать еще
+        </button>
 
+        <div class="pagination__nav">
+          <h3 class="visually-hidden">Список страниц</h3>
+
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="#" class="pagination__link pagination__link--prev pagination_link--disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="" class="pagination__link pagination__link--current">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">4</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">5</a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="" class="pagination__link pagination__link--next">
+                <span class="visually-hidden">Следующая страница</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="currentColor"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
     </main>
