@@ -69,12 +69,125 @@
         </li>
       </ul>
 
-      <h1 class="page-main__title">
+      <h1 class="page-main__title page-main__title--inner">
         Сливочное мороженое
       </h1>
 
       <section class="filter">
-        <form action="">
+        <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <div class="filter__top">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title" for="sorting">Сортировка</legend>
+              <select class="filter__select" name="sorting" id="sorting">
+                <option value="popular" checked>по популярности</option>
+                <option value="cheap">cначала дешёвое</option>
+                <option value="expensive">cначала дорогое</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="filter__fieldset">
+              <legend class="visually-hidden">Цена:</legend>
+              <div class="range">
+                <div class="range__fields filter__title">
+                  Цена:
+                  <label>
+                  <input class="range__input" type="number" value="100" name="min-price">
+                  ₽
+                  </label>
+                  <label>
+                    –
+                    <input class="range__input" type="number" value="500" name="max-pricee">
+                    ₽
+                  </label>
+                </div>
+                <div class="range__inner">
+                  <div class="range__scale scale">
+                    <div class="scale__bar" style="margin-left: 24px; margin-right: 52px;">
+                      <button class="scale__toggle" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="scale__toggle" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Жирность:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="control control--radio">
+                    <input class="control__input" type="radio" name="fat-content" value="0">
+                    <span class="control__lead">0%</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="control control--radio">
+                    <input class="control__input" type="radio" name="fat-content" value="up-to-10" checked>
+                    <span class="control__lead">до 10%</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="control control--radio">
+                    <input class="control__input" type="radio" name="fat-content" value="up-to-30">
+                    <span class="control__lead">до 30%</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="control control--radio">
+                    <input class="control__input" type="radio" name="fat-content" value="above-30">
+                    <span class="control__lead">выше 30%</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+
+          <div class="filter__bottom">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__title">Наполнители:</legend>
+              <ul class="filter__list filter__list--fillers">
+                <li class="filter__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" type="checkbox" name="chocolate" checked>
+                    <span class="control__lead">шоколадные</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label  class="control control--checkbox">
+                    <input class="control__input" type="checkbox" name="sugar" checked>
+                    <span class="control__lead">сахарные посыпки</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label  class="control control--checkbox">
+                    <input class="control__input" type="checkbox" name="fruits">
+                    <span class="control__lead">фрукты</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label  class="control control--checkbox">
+                    <input class="control__input" type="checkbox" name="syrups">
+                    <span class="control__lead">сиропы</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label  class="control control--checkbox">
+                    <input class="control__input" type="checkbox" name="jams">
+                    <span class="control__lead">джемы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <input class="filter__button button" type="submit" value="Применить">
+          </div>
 
         </form>
       </section>
@@ -135,10 +248,10 @@
         </article>
 
         <article class="popular__item card">
-          <img class="card__img" src="img/catalog/catalog-4.png" width="168" height="168" alt="">
-          <h4 class="card__title">Бабл-гам</h4>
-          <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
-          <span class="card__price">320 ₽/кг</span>
+          <img class="card__img" src="img/catalog/catalog-5.png" width="168" height="168" alt="">
+          <h4 class="card__title">Ежевика</h4>
+          <p class="card__desc">Сливочное мороженое с ежевичным джемом</p>
+          <span class="card__price">330 ₽/кг</span>
           <button class="card__button">
             <span class="visually-hidden">Купить</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,10 +261,10 @@
         </article>
 
         <article class="popular__item card">
-          <img class="card__img" src="img/catalog/catalog-4.png" width="168" height="168" alt="">
-          <h4 class="card__title">Бабл-гам</h4>
-          <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
-          <span class="card__price">320 ₽/кг</span>
+          <img class="card__img" src="img/catalog/catalog-6.png" width="168" height="168" alt="">
+          <h4 class="card__title">Банан</h4>
+          <p class="card__desc">Сливочный пломбир с банановым вкусом</p>
+          <span class="card__price">340 ₽/кг</span>
           <button class="card__button">
             <span class="visually-hidden">Купить</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,10 +274,10 @@
         </article>
 
         <article class="popular__item card">
-          <img class="card__img" src="img/catalog/catalog-4.png" width="168" height="168" alt="">
-          <h4 class="card__title">Бабл-гам</h4>
-          <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
-          <span class="card__price">320 ₽/кг</span>
+          <img class="card__img" src="img/catalog/catalog-7.png" width="168" height="168" alt="">
+          <h4 class="card__title">Шоколадка</h4>
+          <p class="card__desc">Классический шоколадный пломбир</p>
+          <span class="card__price">270 ₽/кг</span>
           <button class="card__button">
             <span class="visually-hidden">Купить</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -174,10 +287,10 @@
         </article>
 
         <article class="popular__item card">
-          <img class="card__img" src="img/catalog/catalog-4.png" width="168" height="168" alt="">
-          <h4 class="card__title">Бабл-гам</h4>
-          <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
-          <span class="card__price">320 ₽/кг</span>
+          <img class="card__img" src="img/catalog/catalog-8.png" width="168" height="168" alt="">
+          <h4 class="card__title">Клубничка</h4>
+          <p class="card__desc">Сливочный пломбир с клубничным вкусом</p>
+          <span class="card__price">300 ₽/кг</span>
           <button class="card__button">
             <span class="visually-hidden">Купить</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
