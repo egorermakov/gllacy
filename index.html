@@ -370,5 +370,34 @@
         <p class="developer__text">Сделано в <a class="developer__link" href="">.html academy</a> © 2021</p>
       </div>
     </footer>
+
+    <section class="modal modal--close">
+      <div class="modal__container">
+        <h2 class="modal__title">Мы обязательно ответим вам!</h2>
+        <button class="modal__close-button" type="button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__field field">
+            <label class="visually-hidden" for="">Имя и фамилия</label>
+            <input class="field__input" type="text" placeholder="Имя и фамилия">
+          </div>
+
+          <div class="form__field field">
+            <label class="visually-hidden" for="">Электронная почта</label>
+            <input  class="field__input" type="email" placeholder="email@example.com">
+          </div>
+
+          <div class="form__field field">
+            <label class="visually-hidden" for="">Сообщение</label>
+            <textarea  class="field__input field__textarea" rows="6">В свободной форме</textarea>
+          </div>
+
+          <button class="modal__button button button--secondary" type="submit">Отправить</button>
+
+        </form>
+      </div>
+    </section>
+
   </body>
 </html>
