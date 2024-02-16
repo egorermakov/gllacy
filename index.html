@@ -379,18 +379,18 @@
         </button>
         <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__field field">
-            <label class="visually-hidden" for="">Имя и фамилия</label>
-            <input class="field__input" type="text" placeholder="Имя и фамилия">
+            <label class="visually-hidden" for="name">Имя и фамилия</label>
+            <input class="field__input" name="name" type="text" placeholder="Имя и фамилия">
           </div>
 
           <div class="form__field field">
-            <label class="visually-hidden" for="">Электронная почта</label>
-            <input  class="field__input" type="email" placeholder="email@example.com">
+            <label class="visually-hidden" for="eamil">Электронная почта</label>
+            <input  class="field__input" name="email" type="email" placeholder="email@example.com" required>
           </div>
 
           <div class="form__field field">
-            <label class="visually-hidden" for="">Сообщение</label>
-            <textarea  class="field__input field__textarea" rows="6">В свободной форме</textarea>
+            <label class="visually-hidden" for="message">Сообщение</label>
+            <textarea  class="field__input" name="message" rows="6" placeholder="В свободной форме"></textarea>
           </div>
 
           <button class="modal__button button button--secondary" type="submit">Отправить</button>
