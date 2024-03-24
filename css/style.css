@@ -199,6 +199,8 @@ img {
   gap: 16px;
 }
 
+/* Logo */
+
 .logo {
   display: block;
 }
@@ -207,9 +209,12 @@ img {
   display: block;
 }
 
+/* Site Menu */
+
 .site-menu {
   margin: 0;
   padding: 0;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -232,18 +237,14 @@ img {
   color: var(--color-basic-extra-dark);
 }
 
-.additional-menu {
+.site-menu--additional {
   display: flex;
   gap: 16px;
   align-items: center;
   list-style-type: none;
 }
 
-.additional-menu__item {
-  position: relative;
-}
-
-.additional-menu__link--phone {
+.site-menu__link--phone {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -251,7 +252,7 @@ img {
   text-decoration: none;
 }
 
-.additional-menu__button {
+.site-menu__button {
   margin: 0;
   padding: 0;
   padding: 8px 16px;
@@ -267,8 +268,55 @@ img {
   color: var(--color-basic-extra-dark);
 }
 
-.additional-menu__button--search {
+.site-menu__button--search {
   padding: 8px;
+}
+
+/* Sub Menu */
+
+.sub-menu {
+  position: absolute;
+  margin: 0;
+  margin-top: 8px;
+  padding: 8px 0;
+  top: 100%;
+  left: 0;
+    /* display: none; */
+  background-color: var(--color-basic-extra-light);
+  border-radius: 4px;
+  z-index: 1;
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+
+}
+
+
+.sub-menu__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sub-menu__link {
+  display: block;
+  padding: 6px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-basic-extra-dark);
+}
+
+.sub-menu__link--accent {
+  padding: 8px 16px 0;
+  font-weight: 700;
+}
+
+.sub-menu__link--accent::after {
+  content: "";
+  margin: 12px 0 4px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-basic-neutral);
 }
 
 /* Popup */
@@ -300,15 +348,47 @@ img {
   color: var(--color-basic-extra-dark);
 }
 
-.popup__title--empty {
-  margin-bottom: 0;
+/* Popup Search */
+
+.popup-search {
+  padding: 24px 16px;
+  width: 356px;
 }
 
-.popup-cart--empty {
-  padding: 48px 20px;
-  width: 288px;
-  text-align: center;
+/* Popup Login */
+
+.popup-login {
+  width: 420px;
 }
+.popup-login__form {
+  display: grid;
+  gap: 16px;
+}
+
+.popup-login__footer {
+  margin-top: 16px;
+  display: flex;
+  gap: 24px;
+}
+
+.popup-login__list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.popup-login__link {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  color: var(--color-basic-extra-dark);
+  border-bottom: 1px solid var(--color-basic-extra-dark);
+}
+
+/* Popup Cart */
 
 .popup-cart__list {
   margin-top: 32px;
@@ -322,14 +402,15 @@ img {
   border-bottom: 1px solid var(--color-basic-light);
 }
 
-.cart-item {
+.popup-cart__item {
   display: grid;
   grid-template-columns: 210px 87px max-content;
   gap: 16px;
   align-items: center;
 }
 
-.cart-item__content {
+
+.popup-cart__desc {
   display: grid;
   grid-template-columns: 48px max-content;
   column-gap: 16px;
@@ -337,15 +418,13 @@ img {
   align-items: center;
 }
 
-.cart-item__img {
+.popup-cart__img {
   grid-row: 1 / 3;
   width: 46px;
   height: 46px;
 }
 
-.cart-item__title,
-.cart-item__total-price,
-.popup-cart__total {
+.popup-cart__text {
   margin: 0;
   font-size: 18px;
   line-height: 22px;
@@ -353,32 +432,31 @@ img {
   font-weight: 700;
 }
 
-.cart-item__desc {
+.popup-cart__info {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: var(--color-basic-neutral);
 }
 
-.popup-cart__order {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cart-item__button {
+.popup-cart__del-button {
   padding: 4px;
   box-shadow: none;
   line-height: 16px;
 }
 
-/* Login */
-.login__popup {
-  width: 420px;
+.popup-cart__footer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
-.login__form {
-  display: grid;
-  gap: 16px;
+
+/* Popup Cart Empty */
+
+.popup-cart--empty {
+  padding: 48px 20px 16px;
+  width: 288px;
+  text-align: center;
 }
 
 /* Main */

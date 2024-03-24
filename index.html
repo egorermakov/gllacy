@@ -16,11 +16,28 @@
           <li class="site-menu__item">
             <a href="" class="site-menu__link">
               Каталог
-              <svg class="site-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80799 6.19526C3.54764 5.93491 3.12553 5.93491 2.86518 6.19526C2.60483 6.45561 2.60483 6.87772 2.86518 7.13807L7.52553 11.7984C7.52759 11.8005 7.52967 11.8026 7.53177 11.8047C7.66246 11.9354 7.83392 12.0005 8.00521 12C8.17518 11.9995 8.34498 11.9344 8.47466 11.8047C8.47675 11.8027 8.47881 11.8006 8.48087 11.7985L13.1412 7.13807C13.4016 6.87772 13.4016 6.45561 13.1412 6.19526C12.8809 5.93491 12.4588 5.93491 12.1984 6.19526L8.00321 10.3905L3.80799 6.19526Z" fill="#2D3440"/>
-                </svg>
+              <svg class="site-menu__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.808 6.195a.667.667 0 1 0-.943.943l4.66 4.66a.665.665 0 0 0 .95.006l.006-.005 4.66-4.66a.667.667 0 1 0-.943-.944L8.003 10.39 3.808 6.195Z" fill="#2D3440"/></svg>
               </span>
             </a>
+            <div class="site-menu__sub-menu sub-menu">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link sub-menu__link--accent">Новинки</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="catalog.html" class="sub-menu__link">Сливочное</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Щербеты</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Фруктовый лед</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a href="#" class="sub-menu__link">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-menu__item">
             <a href="" class="site-menu__link">Доставка и оплата</a>
@@ -30,142 +47,141 @@
           </li>
         </ul>
 
-        <ul class="page-header__menu additional-menu">
-          <li class="additional-menu__item">
-            <a class="additional-menu__link additional-menu__link--phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="page-header__menu site-menu site-menu--additional">
+          <li class="site-menu__item">
+            <a class="site-menu__link site-menu__link--phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
-          <li class="additional-menu__item">
-            <a class="additional-menu__button additional-menu__button--search" href="#">
+
+          <li class="site-menu__item">
+            <a class="site-menu__button site-menu__button--search" href="#">
               <span class="visually-hidden">Поиск</span>
-              <svg class="additional-menu__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66341 7.33008C2.66341 4.75275 4.75275 2.66341 7.33008 2.66341C9.90741 2.66341 11.9967 4.75275 11.9967 7.33008C11.9967 8.58735 11.4995 9.7285 10.691 10.5676C10.6682 10.5852 10.6462 10.6044 10.6253 10.6253C10.6044 10.6463 10.5852 10.6682 10.5676 10.6911C9.72847 11.4996 8.58734 11.9967 7.33008 11.9967C4.75275 11.9967 2.66341 9.90741 2.66341 7.33008ZM11.0752 12.018C10.0487 12.8391 8.74675 13.3301 7.33008 13.3301C4.01637 13.3301 1.33008 10.6438 1.33008 7.33008C1.33008 4.01637 4.01637 1.33008 7.33008 1.33008C10.6438 1.33008 13.3301 4.01637 13.3301 7.33008C13.3301 8.74676 12.8391 10.0488 12.018 11.0752L14.4681 13.5253C14.7285 13.7857 14.7285 14.2078 14.4681 14.4682C14.2078 14.7285 13.7857 14.7285 13.5253 14.4682L11.0752 12.018Z" fill="#2D3440"/>
-                </svg>
+              <svg class="site-menu__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.663 7.33a4.667 4.667 0 1 1 8.028 3.238.683.683 0 0 0-.123.123A4.667 4.667 0 0 1 2.664 7.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" fill="#2D3440"/></svg>
             </a>
+            <div class="site-menu__popup popup popup-search popup--open">
+              <form action="">
+                <div class="field">
+                  <input class="field__input" type="text" placeholder="Поиск по сайту">
+                </div>
+              </form>
           </li>
-          <li class="additional-menu__item login">
-            <a class="additional-menu__button" href="#">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.66667C9 1.29848 9.29848 1 9.66667 1H12.3333C12.8638 1 13.3725 1.21071 13.7475 1.58579C14.1226 1.96086 14.3333 2.46957 14.3333 3V12.3333C14.3333 12.8638 14.1226 13.3725 13.7475 13.7475C13.3725 14.1226 12.8638 14.3333 12.3333 14.3333H9.66667C9.29848 14.3333 9 14.0349 9 13.6667C9 13.2985 9.29848 13 9.66667 13H12.3333C12.5101 13 12.6797 12.9298 12.8047 12.8047C12.9298 12.6797 13 12.5101 13 12.3333V3C13 2.82319 12.9298 2.65362 12.8047 2.5286C12.6797 2.40357 12.5101 2.33333 12.3333 2.33333H9.66667C9.29848 2.33333 9 2.03486 9 1.66667ZM5.86189 3.86193C6.12224 3.60158 6.54435 3.60158 6.8047 3.86193L10.1338 7.19103C10.1509 7.20785 10.1671 7.22559 10.1824 7.24416C10.2142 7.28296 10.2411 7.32451 10.2628 7.36795C10.3079 7.45781 10.3333 7.55927 10.3333 7.66667C10.3333 7.77529 10.3074 7.87785 10.2613 7.96846C10.241 8.00841 10.2164 8.04675 10.1876 8.08278C10.1708 8.10378 10.1527 8.12375 10.1335 8.14256L6.8047 11.4714C6.54435 11.7318 6.12224 11.7318 5.86189 11.4714C5.60154 11.2111 5.60154 10.7889 5.86189 10.5286L8.05715 8.33333H1.66667C1.29848 8.33333 1 8.03486 1 7.66667C1 7.29848 1.29848 7 1.66667 7H8.05715L5.86189 4.80474C5.60154 4.54439 5.60154 4.12228 5.86189 3.86193Z" fill="#2D3440"/>
-                </svg>
-                Вход
+
+          <li class="site-menu__item">
+            <a class="site-menu__button" href="#">
+              <svg class="site-menu__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z" fill="#2D3440"/></svg>
+              Вход
             </a>
 
-            <div class="additional-menu__popup popup popup--open login__popup">
-              <div class="popup__content">
-                <h2 class="popup__title">Личный кабинет</h2>
-                <form action="" class="login__form form">
-                  <div class="form__field field">
-                    <input class="field__input" type="email" id="login" name="login" placeholder="Эл. почта">
-                  </div>
+            <div class="site-menu__popup popup popup-login">
+              <h2 class="popup__title">Личный кабинет</h2>
+              <form action="" class="popup-login__form form">
+                <div class="form__field field">
+                  <input class="field__input" type="email" id="login" name="login" placeholder="Эл. почта">
+                </div>
 
-                  <div class="form__field field">
-                    <input class="field__input" type="password" id="password" name="password" placeholder="Пароль">
-                  </div>
+                <div class="form__field field">
+                  <input class="field__input" type="password" id="password" name="password" placeholder="Пароль">
+                </div>
 
-                  <button class="form__button button button--secondary" type="submit">Вход</button>
+                <div class="popup-login__footer">
+                  <button class="login__button button button--secondary" type="submit">Войти</button>
 
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Регистрация</a>
-                </form>
-              </div>
+                  <ul class="popup-login__list">
+                    <li class="popup-login__item">
+                      <a class="popup-login__link" href="#">
+                        Забыли пароль?
+                      </a>
+                    </li>
+                    <li class="popup-login__item">
+                      <a class="popup-login__link" href="#">
+                        Регистрация
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
             </div>
           </li>
 
-          <li class="additional-menu__item">
-            <a class="additional-menu__button">
+          <li class="site-menu__item">
+            <a class="site-menu__button" href="#">
               <span class="visually-hidden">Корзина</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" fill="#2D3440"/>
-              </svg>
+              <svg class="site-menu__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/></svg>
               2 товара
             </a>
 
-            <div class="additional-menu__popup popup popup-cart">
-              <div class="popup__content">
+            <div class="site-menu__popup popup popup-cart">
                 <h2 class="popup__title">Корзина</h2>
-                <ul class="popup-cart__list">
 
-                  <li class="popup-cart__item cart-item">
-                    <div class="cart-item__content">
-                      <img
+                  <ul class="popup-cart__list">
+                    <li class="popup-cart__item">
+                      <div class="popup-cart__desc">
+                        <img
                         src="img/catalog/catalog-1.png"
                         alt="Малинка"
-                        class="cart-item__img"
+                        class="popup-cart__img"
                         width="46"
                         height="46"
                       >
-                      <p class="cart-item__title">
+                      <p class="popup-cart__text">
                         Малинка
                       </p>
-                      <p class="cart-item__desc">
-                        <span class="cart-item__value">1 кг</span> х <span class="cart-item__price">310 ₽</span>
+                      <p class="popup-cart__info">
+                        <span class="popup-cart__value">1 кг</span> х <span class="popup-cart__price">310 ₽</span>
                       </p>
-                    </div>
+                      </div>
+                      <p class="popup-cart__text">
+                        310 ₽
+                      </p>
+                      <button class="popup-cart__del-button button" type="button">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
 
-                    <p class="cart-item__total-price">
-                      310 ₽
-                    </p>
-
-                    <button class="cart-item__button button" type="button">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
-                        </svg>
-
-                      <span class="visually-hidden">Удалить из корзины</span>
-                    </button>
-                  </li>
-
-                  <li class="popup-cart__item cart-item">
-                    <div class="cart-item__content">
-                      <img
+                    <li class="popup-cart__item">
+                      <div class="popup-cart__desc">
+                        <img
                         src="img/catalog/catalog-4.png"
-                        alt="Бабл-гам"
-                        class="cart-item__img"
+                        alt="Малинка"
+                        class="popup-cart__img"
                         width="46"
                         height="46"
                       >
-                      <p class="cart-item__title">
+                      <p class="popup-cart__text">
                         Бабл-гам
                       </p>
-                      <p class="cart-item__desc">
-                        <span class="cart-item__value">1,5 кг</span> х <span class="cart-item__price">320 ₽</span>
+                      <p class="popup-cart__info">
+                        <span class="popup-cart__value">1,5 кг</span> х <span class="popup-cart__price">320 ₽</span>
                       </p>
-                    </div>
+                      </div>
+                      <p class="popup-cart__text">
+                        480 ₽
+                      </p>
+                      <button class="popup-cart__del-button button" type="button">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z" fill="#2D3440"/></svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
 
-                    <p class="cart-item__total-price">
-                      480 ₽
-                    </p>
-
-                    <button class="cart-item__button button" type="button">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
-                        </svg>
-
-                      <span class="visually-hidden">Удалить из корзины</span>
-                    </button>
-                  </li>
-                </ul>
-
-                <div class="popup-cart__order">
+                <div class="popup-cart__footer">
                   <a class="popup-cart__button button button--secondary">Оформит заказ</a>
-                  <p class="popup-cart__total">Итого: 790 ₽</p>
+                  <p class="popup-cart__text">Итого: 790 ₽</p>
                 </div>
-              </div>
+
             </div>
           </li>
 
-          <li class="additional-menu__item" hidden>
-            <a class="additional-menu__button">
+          <li class="site-menu__item" hidden>
+            <a class="site-menu__button" href="#">
               <span class="visually-hidden">Нет товаров</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" fill="#2D3440"/>
-              </svg>
+              <svg class="site-menu__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" fill="#2D3440"/></svg>
               Нет товаров
             </a>
 
-            <div class="additional-menu__popup popup popup-cart popup-cart--empty popup--open">
+            <div class="site-menu popup popup-popup-cart popup-popup-cart--empty popup--open">
               <div class="popup__content">
-                <h2 class="popup__title popup__title--empty">Ваша корзина пока пуста</h2>
+                <h2 class="popup__title">Ваша корзина пока пуста</h2>
               </div>
             </div>
           </li>
@@ -484,7 +500,9 @@
       </div>
 
       <div class="page-footer__developer developer">
-        <img class="developer__image" src="img/logo_htmlacademy.svg" width="93" height="27" alt="">
+        <a href="">
+          <img class="developer__image" src="img/logo_htmlacademy.svg" width="93" height="27" alt="">
+        </a>
         <p class="developer__text">Сделано в <a class="developer__link" href="">.html academy</a> © 2021</p>
       </div>
     </footer>
