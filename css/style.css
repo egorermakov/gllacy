@@ -86,9 +86,8 @@ img {
   background-color: var(--color-basic-extra-light);
   border-radius: 26px;
   border: none;
-  box-shadow:
-    0px 0px 0px 2px rgba(252, 252, 252, 0.40),
-    0px 4px 12px 0px rgba(45, 52, 64, 0.1);
+  outline: 4px solid rgba(252, 252, 252, 0.40);
+  box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -101,18 +100,72 @@ img {
 
 .button:hover {
    background-color: rgba(252, 252, 252, 0.40);
-   box-shadow:
-    0px 0px 0px 2px rgba(252, 252, 252),
-    0px 4px 15px 0px rgba(133, 133, 133, 0.15);
+   outline: 4px solid rgba(252, 252, 252);
+   box-shadow: none;
+}
+
+.button:focus {
+  outline: 2px solid var(--color-basic-extra-dark);
+  box-shadow: none;
+}
+
+.button:active {
+  outline: 2px solid var(--color-basic-extra-dark);
+  background-color: var(--color-basic-extra-light) ;
+  box-shadow: none;
 }
 
 .button--secondary {
   color: var(--color-basic-extra-light);
-  background: var(--special-extra-bright, var(--color-special-extra-bright));
-  box-shadow:
-    0px 0px 0px 2px rgba(255, 47, 100, 0.30),
-    0px 4px 12px 0px rgba(45, 52, 64, 0.1);
+  background: var(--color-special-extra-bright);
+  outline:  4px solid rgba(255, 47, 100, 0.30);
+  box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
 }
+
+.button--secondary:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  color: var(--color-basic-extra-dark);
+  outline: 4px solid var(--color-special-extra-bright);
+  box-shadow: none;
+}
+
+.button--secondary:focus {
+  background-color: var(--color-special-extra-bright);
+  outline: 2px solid var(--color-basic-extra-dark);
+  box-shadow: none;
+}
+
+.button--secondary:active {
+  background-color: var(--color-special-light);
+  outline: 2px solid var(--color-basic-extra-dark);
+  box-shadow: none;
+}
+
+.button--tretiary {
+  padding: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: var(--color-basic-extra-light-icon);
+  outline: 2px solid var(--color-basic-extra-light);
+  box-shadow: none;
+}
+
+.button--tretiary:hover {
+  background-color: var(--color-basic-extra-light);
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.button--tretiary:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid var(--color-basic-extra-dark);
+}
+
+.button--tretiary:active {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
 
 /* Form */
 
@@ -769,6 +822,7 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  align-self: center;
 }
 
 .card__button {
@@ -783,6 +837,30 @@ img {
   justify-self: end;
   color: var(--color-basic-extra-light);
   cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  color: var(--color-basic-extra-dark);
+  border: 2px solid var(--color-special-extra-bright);
+}
+
+.card__button:focus {
+  background-color: var(--color-special-extra-bright);
+  color: var(--color-basic-extra-light);
+  border: 2px solid var(--color-basic-extra-dark);
+}
+
+.card__button:active {
+  background-color: var(--color-special-exta-light);
+  color: var(--color-basic-extra-dark);
+  border: 2px solid var(--color-special-extra-bright);
+}
+
+.card__button:disabled {
+  background-color: var(--color-basic-neutral);
+  color: var(--color-basic-dark);
+  border: none;
 }
 
 /* Advantages */
@@ -1284,13 +1362,7 @@ img {
 
 .filter__button {
   margin-top: auto;
-  padding: 8px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  background-color: var(--color-basic-extra-light-icon);
-  border: 2px solid var(--color-basic-extra-light);
-  box-shadow: none;
+  margin-bottom: 2px;
 }
 
 /* Control */
