@@ -235,6 +235,26 @@ img {
   line-height: 20px;
   text-decoration: none;
   color: var(--color-basic-extra-dark);
+  border-radius: 30px;
+}
+
+.site-menu__link:hover {
+  background-color: var(--color-basic-extra-light-hover);
+  transition: 300ms;
+}
+
+.site-menu__item:hover > .site-menu__link--with-sub-menu,
+.site-menu__item:focus-within > .site-menu__link--with-sub-menu {
+  background-color: var(--color-special-bright);
+  color: var(--color-basic-extra-light);
+  transition: 300ms;
+}
+
+.site-menu__item:hover:has(.site-menu__link--with-sub-menu) .site-menu__icon,
+.site-menu__item:focus-within:has(.site-menu__link--with-sub-menu) .site-menu__icon {
+  color: var(--color-basic-extra-light);
+  transform: scaleY(-1);
+  transition: 300ms;
 }
 
 .site-menu--additional {
@@ -277,25 +297,46 @@ img {
 .sub-menu {
   position: absolute;
   margin: 0;
-  margin-top: 8px;
-  padding: 8px 0;
+  padding-top: 8px;
   top: 100%;
   left: 0;
-    /* display: none; */
-  background-color: var(--color-basic-extra-light);
-  border-radius: 4px;
+  display: none;
   z-index: 1;
-  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
 
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
 }
 
 
+.site-menu__item:hover > .site-menu__sub-menu,
+.site-menu__item:focus-within > .site-menu__sub-menu  {
+  display: block;
+}
+
 .sub-menu__list {
-  padding: 0;
+  padding: 8px 0;
   list-style-type: none;
+  background-color: var(--color-basic-extra-light);
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+}
+
+.sub-menu__item:hover {
+  background-color: var(--color-special-exta-light);
+  transition: 100ms;
 }
 
 .sub-menu__link {
+  position: relative;
   display: block;
   padding: 6px 16px;
   text-decoration: none;
@@ -306,15 +347,18 @@ img {
 }
 
 .sub-menu__link--accent {
-  padding: 8px 16px 0;
+  margin-bottom: 8px;
+  padding: 8px 16px;
   font-weight: 700;
 }
 
 .sub-menu__link--accent::after {
   content: "";
-  margin: 12px 0 4px;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 16px;
   display: block;
-  width: 100%;
+  width: calc(100% - 32px);
   height: 1px;
   background-color: var(--color-basic-neutral);
 }
