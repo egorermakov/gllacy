@@ -1755,6 +1755,7 @@ a:focus {
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  outline-offset: -1px;
 }
 
 .pagination__link:hover {
@@ -1763,12 +1764,12 @@ a:focus {
 
 .pagination__link:focus {
   background-color: var(--color-basic-extra-light-hover);
-  border: 1px solid var(--color-basic-extra-dark);
+  outline: 1px solid var(--color-basic-extra-dark);
 }
 
 .pagination__link:active {
   background-color: var(--color-basic-extra-light-hover);
-  border: 1px solid var(--color-basic-extra-light);
+  outline: 1px solid var(--color-basic-extra-light);
 }
 
 .pagination__link--current {
