@@ -51,7 +51,6 @@
   --color-status-warning: #fd912e;
 }
 
-
 /* Common */
 
 *,
@@ -340,15 +339,23 @@ a:focus {
 }
 
 .page__body--pink {
-  background: var(--color-special-light);
+  background-color: var(--color-special-light);
 }
 
 .page__body--blue {
-  background: var(--color-special-blue);
+  background-color: var(--color-special-blue);
 }
 
 .page__body--yellow {
-  background: var(--color-special-yellow);
+  background-color: var(--color-special-yellow);
+}
+
+.page__body--blue .slider__img-wrap::after {
+  background-color: var(--color-special-light-blue);
+}
+
+.page__body--yellow .slider__img-wrap::after {
+  background-color: var(--color-special-light-yellow);
 }
 
 .page__main {
@@ -1289,7 +1296,7 @@ a:focus {
   padding: 40px;
   padding-bottom: 42px;
   border-radius: 8px;
-  background: var(--basic-extra-light, var(--color-basic-extra-light));
+  background: var(--color-basic-extra-light);
   box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
 }
 
@@ -1317,6 +1324,7 @@ a:focus {
   background-position: 50% 50%;
   background-size: cover;
   background-image: url("../img/background/feedback-bg.jpg");
+  background-color: var(--color-basic-white);
   border-radius: 16px;
 }
 
