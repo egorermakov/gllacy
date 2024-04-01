@@ -197,21 +197,21 @@ a:focus {
 
 .button--tretiary:hover {
   background-color: var(--color-basic-extra-light);
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  outline: 2px solid var(--color-basic-extra-light-icon);
 }
 
 .button--tretiary:focus {
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: var(--color-basic-extra-light-icon);
   outline: 2px solid var(--color-basic-extra-dark);
 }
 
 .button--tretiary:active {
-  background-color: rgba(252, 252, 252, 0.3);
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  background-color: var(--color-basic-extra-light-icon);
+  outline: 2px solid var(--color-basic-extra-light-icon);
 }
 
 .button--tretiary--disabled {
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: var(--color-basic-extra-light-icon);
   outline: 2px solid var(--color-basic-extra-light);
   color: var(--color-basic-extra-dark);
   opacity: 0.4;
@@ -952,7 +952,7 @@ a:focus {
   padding: 0;
   width: 12px;
   height: 12px;
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: var(--color-basic-extra-light-icon);
   border-radius: 50%;
   cursor: pointer;
   border: 1px solid transparent;
@@ -968,7 +968,7 @@ a:focus {
 }
 
 .slider-pagination__button:active {
-  background-color: rgba(252, 252, 252, 0.5);
+  background-color: var(--color-basic-extra-light-hover);
   border: 1px solid transparent;
 
 }
@@ -1105,7 +1105,7 @@ a:focus {
 }
 
 .card__button:hover {
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: var(--color-basic-extra-light-icon);
   color: var(--color-basic-extra-dark);
   border: 2px solid var(--color-special-extra-bright);
 }
