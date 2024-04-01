@@ -1817,6 +1817,7 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .pagination::before {
@@ -1883,18 +1884,25 @@ a:focus {
   background-color: var(--color-basic-extra-light);
 }
 
-.pagination__link--prev {
-  padding-left: 0;
+.pagination__prev {
+  margin-right: 4px;
+  margin-left: -4px;
   color: var(--color-basic-extra-dark);
 }
 
-.pagination__link--next {
-  padding-right: 0;
+.pagination__next {
+  margin-right: -4px;
+  margin-left: 4px;
   color: var(--color-basic-extra-dark);
 }
 
 .pagination_link--disabled {
   opacity: 0.3;
+}
+
+.pagination__icon {
+  width: 16px;
+  height: 16px;
 }
 
 /* Modal */
